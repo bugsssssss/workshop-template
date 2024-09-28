@@ -1,0 +1,1364 @@
+DEBUG 2024-09-28 10:46:51,072 utils (0.003) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:46:51,076 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:46:51,464 utils (0.003) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:46:51,467 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:46:51,470 utils (0.001) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:46:51,472 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:46:51,483 utils (0.001) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:46:51,485 utils (0.001) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:46:51,487 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:46:51,491 utils (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',); alias=default
+DEBUG 2024-09-28 10:46:51,496 utils (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry') LIMIT 21; args=('admin', 'logentry'); alias=default
+DEBUG 2024-09-28 10:46:51,500 utils (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,); alias=default
+DEBUG 2024-09-28 10:46:51,502 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',); alias=default
+DEBUG 2024-09-28 10:46:51,506 utils (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',); alias=default
+DEBUG 2024-09-28 10:46:51,508 utils (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission') LIMIT 21; args=('auth', 'permission'); alias=default
+DEBUG 2024-09-28 10:46:51,511 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group') LIMIT 21; args=('auth', 'group'); alias=default
+DEBUG 2024-09-28 10:46:51,514 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user') LIMIT 21; args=('auth', 'user'); alias=default
+DEBUG 2024-09-28 10:46:51,518 utils (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4); alias=default
+DEBUG 2024-09-28 10:46:51,521 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',); alias=default
+DEBUG 2024-09-28 10:46:51,523 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',); alias=default
+DEBUG 2024-09-28 10:46:51,526 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype') LIMIT 21; args=('contenttypes', 'contenttype'); alias=default
+DEBUG 2024-09-28 10:46:51,529 utils (0.001) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,); alias=default
+DEBUG 2024-09-28 10:46:51,534 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',); alias=default
+DEBUG 2024-09-28 10:46:51,537 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',); alias=default
+DEBUG 2024-09-28 10:46:51,539 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session') LIMIT 21; args=('sessions', 'session'); alias=default
+DEBUG 2024-09-28 10:46:51,542 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,); alias=default
+DEBUG 2024-09-28 10:46:51,544 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',); alias=default
+DEBUG 2024-09-28 10:46:51,547 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'clients'; args=('clients',); alias=default
+DEBUG 2024-09-28 10:46:51,549 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'clients' AND "django_content_type"."model" = 'client') LIMIT 21; args=('clients', 'client'); alias=default
+DEBUG 2024-09-28 10:46:51,552 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(7,); alias=default
+DEBUG 2024-09-28 10:46:51,554 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'clients'; args=('clients',); alias=default
+DEBUG 2024-09-28 10:46:51,556 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'services'; args=('services',); alias=default
+DEBUG 2024-09-28 10:46:51,558 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'services' AND "django_content_type"."model" = 'plan') LIMIT 21; args=('services', 'plan'); alias=default
+DEBUG 2024-09-28 10:46:51,561 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'services' AND "django_content_type"."model" = 'service') LIMIT 21; args=('services', 'service'); alias=default
+DEBUG 2024-09-28 10:46:51,564 utils (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'services' AND "django_content_type"."model" = 'subscription') LIMIT 21; args=('services', 'subscription'); alias=default
+DEBUG 2024-09-28 10:46:51,567 utils (0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8, 9, 10) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8, 9, 10); alias=default
+DEBUG 2024-09-28 10:46:51,569 utils (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'services'; args=('services',); alias=default
+DEBUG 2024-09-28 10:46:52,124 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:46:52,129 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:46:55,338 utils (0.001) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 10:46:55,341 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:46:55,345 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:48:27,412 utils (0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-28T10:48:27.387233+00:00'::timestamptz AND "django_session"."session_key" = 'bv50bw7j5vacmnv9lb585h07e1eexje2') LIMIT 21; args=(datetime.datetime(2024, 9, 28, 10, 48, 27, 387233, tzinfo=datetime.timezone.utc), 'bv50bw7j5vacmnv9lb585h07e1eexje2'); alias=default
+DEBUG 2024-09-28 10:48:27,417 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:48:27,420 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2024-09-28 10:48:27,440 utils (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'services' AND "django_content_type"."model" = 'subscription') LIMIT 21; args=('services', 'subscription'); alias=default
+DEBUG 2024-09-28 10:48:27,443 utils (0.000) COMMIT; args=None; alias=default
+DEBUG 2024-09-28 10:48:27,464 utils (0.001) DECLARE "_django_curs_281473659792160_sync_1" NO SCROLL CURSOR WITH HOLD FOR SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client"; args=(); alias=default
+DEBUG 2024-09-28 10:48:27,469 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:48:27,471 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:48:27,477 utils (0.001) DECLARE "_django_curs_281473659792160_sync_2" NO SCROLL CURSOR WITH HOLD FOR SELECT "services_service"."id", "services_service"."name", "services_service"."full_price" FROM "services_service"; args=(); alias=default
+DEBUG 2024-09-28 10:48:27,481 utils (0.000) DECLARE "_django_curs_281473659792160_sync_3" NO SCROLL CURSOR WITH HOLD FOR SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan"; args=(); alias=default
+DEBUG 2024-09-28 10:48:27,548 utils (0.008) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-28T10:48:27.516938+00:00'::timestamptz AND "django_session"."session_key" = 'bv50bw7j5vacmnv9lb585h07e1eexje2') LIMIT 21; args=(datetime.datetime(2024, 9, 28, 10, 48, 27, 516938, tzinfo=datetime.timezone.utc), 'bv50bw7j5vacmnv9lb585h07e1eexje2'); alias=default
+DEBUG 2024-09-28 10:48:27,562 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:48:36,112 utils (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-28T10:48:36.077649+00:00'::timestamptz AND "django_session"."session_key" = 'bv50bw7j5vacmnv9lb585h07e1eexje2') LIMIT 21; args=(datetime.datetime(2024, 9, 28, 10, 48, 36, 77649, tzinfo=datetime.timezone.utc), 'bv50bw7j5vacmnv9lb585h07e1eexje2'); alias=default
+DEBUG 2024-09-28 10:48:36,116 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:48:36,118 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2024-09-28 10:48:36,123 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:48:36,127 utils (0.001) SELECT "services_service"."id", "services_service"."name", "services_service"."full_price" FROM "services_service" WHERE "services_service"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:48:36,131 utils (0.001) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 2 LIMIT 21; args=(2,); alias=default
+DEBUG 2024-09-28 10:48:36,135 utils (0.001) SELECT 1 AS "a" FROM "clients_client" WHERE "clients_client"."id" = 1 LIMIT 1; args=(1, 1); alias=default
+DEBUG 2024-09-28 10:48:36,139 utils (0.001) SELECT 1 AS "a" FROM "services_service" WHERE "services_service"."id" = 1 LIMIT 1; args=(1, 1); alias=default
+DEBUG 2024-09-28 10:48:36,143 utils (0.000) SELECT 1 AS "a" FROM "services_plan" WHERE "services_plan"."id" = 2 LIMIT 1; args=(1, 2); alias=default
+DEBUG 2024-09-28 10:48:36,149 utils (0.003) INSERT INTO "services_subscription" ("client_id", "service_id", "plan_id") VALUES (1, 1, 2) RETURNING "services_subscription"."id"; args=(1, 1, 2); alias=default
+DEBUG 2024-09-28 10:48:36,152 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:48:36,156 utils (0.002) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2024-09-28T10:48:36.154000+00:00'::timestamptz, 1, 8, '7', 'admin: Tech support - full', 1, '[{"added": {}}]') RETURNING "django_admin_log"."id"; args=(datetime.datetime(2024, 9, 28, 10, 48, 36, 154000, tzinfo=datetime.timezone.utc), 1, 8, '7', 'admin: Tech support - full', 1, '[{"added": {}}]'); alias=default
+DEBUG 2024-09-28 10:48:36,163 utils (0.005) COMMIT; args=None; alias=default
+DEBUG 2024-09-28 10:48:36,180 utils (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-28T10:48:36.172462+00:00'::timestamptz AND "django_session"."session_key" = 'bv50bw7j5vacmnv9lb585h07e1eexje2') LIMIT 21; args=(datetime.datetime(2024, 9, 28, 10, 48, 36, 172462, tzinfo=datetime.timezone.utc), 'bv50bw7j5vacmnv9lb585h07e1eexje2'); alias=default
+DEBUG 2024-09-28 10:48:36,182 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:48:36,185 utils (0.001) SELECT COUNT(*) AS "__count" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 10:48:36,187 utils (0.000) SELECT COUNT(*) AS "__count" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 10:48:36,193 utils (0.002) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id", "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "services_service"."id", "services_service"."name", "services_service"."full_price", "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_subscription" INNER JOIN "clients_client" ON ("services_subscription"."client_id" = "clients_client"."id") INNER JOIN "auth_user" ON ("clients_client"."user_id" = "auth_user"."id") INNER JOIN "services_service" ON ("services_subscription"."service_id" = "services_service"."id") INNER JOIN "services_plan" ON ("services_subscription"."plan_id" = "services_plan"."id") ORDER BY "services_subscription"."id" DESC; args=(); alias=default
+DEBUG 2024-09-28 10:48:36,230 utils (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-28T10:48:36.221379+00:00'::timestamptz AND "django_session"."session_key" = 'bv50bw7j5vacmnv9lb585h07e1eexje2') LIMIT 21; args=(datetime.datetime(2024, 9, 28, 10, 48, 36, 221379, tzinfo=datetime.timezone.utc), 'bv50bw7j5vacmnv9lb585h07e1eexje2'); alias=default
+DEBUG 2024-09-28 10:48:36,239 utils (0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:48:36,972 utils (0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-28T10:48:36.957541+00:00'::timestamptz AND "django_session"."session_key" = 'bv50bw7j5vacmnv9lb585h07e1eexje2') LIMIT 21; args=(datetime.datetime(2024, 9, 28, 10, 48, 36, 957541, tzinfo=datetime.timezone.utc), 'bv50bw7j5vacmnv9lb585h07e1eexje2'); alias=default
+DEBUG 2024-09-28 10:48:36,979 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:48:36,982 utils (0.001) SELECT COUNT(*) AS "__count" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 10:48:36,985 utils (0.000) SELECT COUNT(*) AS "__count" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 10:48:36,991 utils (0.002) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id", "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "services_service"."id", "services_service"."name", "services_service"."full_price", "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_subscription" INNER JOIN "clients_client" ON ("services_subscription"."client_id" = "clients_client"."id") INNER JOIN "auth_user" ON ("clients_client"."user_id" = "auth_user"."id") INNER JOIN "services_service" ON ("services_subscription"."service_id" = "services_service"."id") INNER JOIN "services_plan" ON ("services_subscription"."plan_id" = "services_plan"."id") ORDER BY "services_subscription"."id" DESC; args=(); alias=default
+DEBUG 2024-09-28 10:48:37,025 utils (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-28T10:48:37.014451+00:00'::timestamptz AND "django_session"."session_key" = 'bv50bw7j5vacmnv9lb585h07e1eexje2') LIMIT 21; args=(datetime.datetime(2024, 9, 28, 10, 48, 37, 14451, tzinfo=datetime.timezone.utc), 'bv50bw7j5vacmnv9lb585h07e1eexje2'); alias=default
+DEBUG 2024-09-28 10:48:37,029 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:48:47,508 utils (0.003) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 10:48:47,514 utils (0.002) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:48:47,520 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:48:47,523 utils (0.000) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:48:47,526 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:49:41,882 utils (0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-28T10:49:41.846868+00:00'::timestamptz AND "django_session"."session_key" = 'bv50bw7j5vacmnv9lb585h07e1eexje2') LIMIT 21; args=(datetime.datetime(2024, 9, 28, 10, 49, 41, 846868, tzinfo=datetime.timezone.utc), 'bv50bw7j5vacmnv9lb585h07e1eexje2'); alias=default
+DEBUG 2024-09-28 10:49:41,886 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:49:41,888 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2024-09-28 10:49:41,894 utils (0.000) COMMIT; args=None; alias=default
+DEBUG 2024-09-28 10:49:41,902 utils (0.001) DECLARE "_django_curs_281473655692064_sync_1" NO SCROLL CURSOR WITH HOLD FOR SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client"; args=(); alias=default
+DEBUG 2024-09-28 10:49:41,905 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:49:41,907 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:49:41,911 utils (0.001) DECLARE "_django_curs_281473655692064_sync_2" NO SCROLL CURSOR WITH HOLD FOR SELECT "services_service"."id", "services_service"."name", "services_service"."full_price" FROM "services_service"; args=(); alias=default
+DEBUG 2024-09-28 10:49:41,916 utils (0.000) DECLARE "_django_curs_281473655692064_sync_3" NO SCROLL CURSOR WITH HOLD FOR SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan"; args=(); alias=default
+DEBUG 2024-09-28 10:49:41,949 utils (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-28T10:49:41.940736+00:00'::timestamptz AND "django_session"."session_key" = 'bv50bw7j5vacmnv9lb585h07e1eexje2') LIMIT 21; args=(datetime.datetime(2024, 9, 28, 10, 49, 41, 940736, tzinfo=datetime.timezone.utc), 'bv50bw7j5vacmnv9lb585h07e1eexje2'); alias=default
+DEBUG 2024-09-28 10:49:41,960 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:49:52,221 utils (0.007) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-28T10:49:52.197713+00:00'::timestamptz AND "django_session"."session_key" = 'bv50bw7j5vacmnv9lb585h07e1eexje2') LIMIT 21; args=(datetime.datetime(2024, 9, 28, 10, 49, 52, 197713, tzinfo=datetime.timezone.utc), 'bv50bw7j5vacmnv9lb585h07e1eexje2'); alias=default
+DEBUG 2024-09-28 10:49:52,227 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:49:52,229 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2024-09-28 10:49:52,235 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:49:52,239 utils (0.001) SELECT "services_service"."id", "services_service"."name", "services_service"."full_price" FROM "services_service" WHERE "services_service"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:49:52,242 utils (0.000) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:49:52,245 utils (0.000) SELECT 1 AS "a" FROM "clients_client" WHERE "clients_client"."id" = 3 LIMIT 1; args=(1, 3); alias=default
+DEBUG 2024-09-28 10:49:52,247 utils (0.000) SELECT 1 AS "a" FROM "services_service" WHERE "services_service"."id" = 1 LIMIT 1; args=(1, 1); alias=default
+DEBUG 2024-09-28 10:49:52,250 utils (0.000) SELECT 1 AS "a" FROM "services_plan" WHERE "services_plan"."id" = 3 LIMIT 1; args=(1, 3); alias=default
+DEBUG 2024-09-28 10:49:52,253 utils (0.001) INSERT INTO "services_subscription" ("client_id", "service_id", "plan_id") VALUES (3, 1, 3) RETURNING "services_subscription"."id"; args=(3, 1, 3); alias=default
+DEBUG 2024-09-28 10:49:52,257 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:49:52,260 utils (0.001) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2024-09-28T10:49:52.258871+00:00'::timestamptz, 1, 8, '8', 'test: Tech support - student', 1, '[{"added": {}}]') RETURNING "django_admin_log"."id"; args=(datetime.datetime(2024, 9, 28, 10, 49, 52, 258871, tzinfo=datetime.timezone.utc), 1, 8, '8', 'test: Tech support - student', 1, '[{"added": {}}]'); alias=default
+DEBUG 2024-09-28 10:49:52,263 utils (0.002) COMMIT; args=None; alias=default
+DEBUG 2024-09-28 10:49:52,275 utils (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-28T10:49:52.269221+00:00'::timestamptz AND "django_session"."session_key" = 'bv50bw7j5vacmnv9lb585h07e1eexje2') LIMIT 21; args=(datetime.datetime(2024, 9, 28, 10, 49, 52, 269221, tzinfo=datetime.timezone.utc), 'bv50bw7j5vacmnv9lb585h07e1eexje2'); alias=default
+DEBUG 2024-09-28 10:49:52,279 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:49:52,283 utils (0.001) SELECT COUNT(*) AS "__count" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 10:49:52,285 utils (0.000) SELECT COUNT(*) AS "__count" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 10:49:52,290 utils (0.002) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id", "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "services_service"."id", "services_service"."name", "services_service"."full_price", "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_subscription" INNER JOIN "clients_client" ON ("services_subscription"."client_id" = "clients_client"."id") INNER JOIN "auth_user" ON ("clients_client"."user_id" = "auth_user"."id") INNER JOIN "services_service" ON ("services_subscription"."service_id" = "services_service"."id") INNER JOIN "services_plan" ON ("services_subscription"."plan_id" = "services_plan"."id") ORDER BY "services_subscription"."id" DESC; args=(); alias=default
+DEBUG 2024-09-28 10:49:52,319 utils (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-09-28T10:49:52.312068+00:00'::timestamptz AND "django_session"."session_key" = 'bv50bw7j5vacmnv9lb585h07e1eexje2') LIMIT 21; args=(datetime.datetime(2024, 9, 28, 10, 49, 52, 312068, tzinfo=datetime.timezone.utc), 'bv50bw7j5vacmnv9lb585h07e1eexje2'); alias=default
+DEBUG 2024-09-28 10:49:52,323 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:49:59,249 utils (0.002) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 10:49:59,255 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:49:59,258 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:49:59,261 utils (0.000) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:49:59,264 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:49:59,268 utils (0.000) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:49:59,255 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:49:59,270 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:53:07,366 utils (0.006) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:53:07,369 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:53:12,296 utils (0.003) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:53:12,300 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:53:13,734 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:53:13,737 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:54:10,125 utils (0.008) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:54:10,132 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:54:41,611 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:54:41,615 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:54:50,299 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:54:50,303 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:55:16,631 utils (0.016) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:55:16,636 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:55:38,841 utils (0.007) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:55:38,847 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:55:47,065 utils (0.001) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 10:55:47,068 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 10:55:47,071 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 10:55:47,073 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 10:57:04,607 utils (0.006) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:57:04,610 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:57:07,114 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:57:07,118 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:57:38,557 utils (0.002) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 10:57:38,562 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 10:57:38,566 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 10:58:57,328 utils (0.007) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:58:57,333 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:59:23,827 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:59:23,830 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:59:33,577 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:59:33,581 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 10:59:37,118 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 10:59:37,121 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:00:26,337 utils (0.006) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:00:26,342 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:00:41,260 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:00:41,264 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:00:42,681 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:00:42,684 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:01:03,899 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:01:03,904 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:01:05,370 utils (0.006) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:01:05,374 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:01:07,843 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:01:07,848 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:01:10,380 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:01:10,384 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:01:11,791 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:01:11,794 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:01:15,334 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:01:15,338 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:01:16,775 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:01:16,779 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:01:19,253 utils (0.006) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:01:19,260 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:01:48,717 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:01:48,722 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:01:53,305 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:01:53,308 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:02:30,156 utils (0.007) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:02:30,159 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:03:00,617 utils (0.008) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:03:00,621 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:03:01,920 utils (0.001) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 11:03:01,927 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:03:01,930 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:03:22,923 utils (0.016) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:03:22,929 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:03:27,489 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:03:27,493 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:03:28,987 utils (0.001) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 11:03:28,991 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:03:28,995 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:03:29,006 utils (0.001) SELECT "services_service"."id", "services_service"."name", "services_service"."full_price" FROM "services_service" WHERE "services_service"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 11:03:29,010 utils (0.001) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 4 LIMIT 21; args=(4,); alias=default
+DEBUG 2024-09-28 11:03:29,014 utils (0.000) SELECT "services_service"."id", "services_service"."name", "services_service"."full_price" FROM "services_service" WHERE "services_service"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 11:03:29,017 utils (0.001) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 2 LIMIT 21; args=(2,); alias=default
+DEBUG 2024-09-28 11:03:29,027 utils (0.001) SELECT "services_service"."id", "services_service"."name", "services_service"."full_price" FROM "services_service" WHERE "services_service"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 11:03:29,031 utils (0.000) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:03:37,335 utils (0.007) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:03:37,339 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:03:38,811 utils (0.007) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:03:38,814 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:03:39,195 utils (0.003) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 11:03:39,200 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:03:39,204 utils (0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:03:39,216 utils (0.001) SELECT "services_service"."id", "services_service"."name", "services_service"."full_price" FROM "services_service" WHERE "services_service"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 11:03:39,219 utils (0.001) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 4 LIMIT 21; args=(4,); alias=default
+DEBUG 2024-09-28 11:03:39,222 utils (0.001) SELECT "services_service"."id", "services_service"."name", "services_service"."full_price" FROM "services_service" WHERE "services_service"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 11:03:39,225 utils (0.000) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 2 LIMIT 21; args=(2,); alias=default
+DEBUG 2024-09-28 11:03:39,228 utils (0.000) SELECT "services_service"."id", "services_service"."name", "services_service"."full_price" FROM "services_service" WHERE "services_service"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 11:03:39,231 utils (0.001) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:03:44,456 utils (0.006) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:03:44,461 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:03:54,162 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:03:54,168 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:03:55,647 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:03:55,650 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:03:57,067 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:03:57,071 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:03:59,534 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:03:59,539 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:04:01,014 utils (0.006) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:04:01,018 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:04:02,372 utils (0.002) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 11:04:02,378 utils (0.002) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:04:02,382 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:04:02,386 utils (0.001) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 4 LIMIT 21; args=(4,); alias=default
+DEBUG 2024-09-28 11:04:02,389 utils (0.000) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 2 LIMIT 21; args=(2,); alias=default
+DEBUG 2024-09-28 11:04:02,392 utils (0.000) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:04:09,782 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:04:09,787 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:04:15,548 utils (0.002) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 11:04:15,554 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:04:15,558 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:04:15,563 utils (0.001) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 4 LIMIT 21; args=(4,); alias=default
+DEBUG 2024-09-28 11:04:15,565 utils (0.000) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 2 LIMIT 21; args=(2,); alias=default
+DEBUG 2024-09-28 11:04:15,568 utils (0.000) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:05:10,298 utils (0.006) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:05:10,302 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:05:12,848 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:05:12,854 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:05:23,365 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:05:23,370 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:05:24,844 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:05:24,850 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:05:28,349 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:05:28,353 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:05:29,900 utils (0.008) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:05:29,904 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:05:30,251 utils (0.001) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 11:05:30,254 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:05:30,258 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:05:30,262 utils (0.001) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 4 LIMIT 21; args=(4,); alias=default
+DEBUG 2024-09-28 11:05:30,265 utils (0.000) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 2 LIMIT 21; args=(2,); alias=default
+DEBUG 2024-09-28 11:05:30,269 utils (0.001) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:06:21,262 utils (0.007) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:06:21,266 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:06:22,705 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:06:22,709 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:06:23,184 utils (0.001) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 11:06:23,188 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:06:23,191 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:06:23,195 utils (0.001) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 4 LIMIT 21; args=(4,); alias=default
+DEBUG 2024-09-28 11:06:23,198 utils (0.000) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 2 LIMIT 21; args=(2,); alias=default
+DEBUG 2024-09-28 11:06:23,201 utils (0.000) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:06:28,541 utils (0.001) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 11:06:28,545 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:06:28,549 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:06:28,554 utils (0.001) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 4 LIMIT 21; args=(4,); alias=default
+DEBUG 2024-09-28 11:06:28,558 utils (0.000) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 2 LIMIT 21; args=(2,); alias=default
+DEBUG 2024-09-28 11:06:28,560 utils (0.001) SELECT "services_plan"."id", "services_plan"."plan_type", "services_plan"."discount_percent" FROM "services_plan" WHERE "services_plan"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:06:50,036 utils (0.007) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:06:50,039 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:07:09,081 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:07:09,085 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:07:13,633 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:07:13,637 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:07:18,247 utils (0.006) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:07:18,251 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:07:22,756 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:07:22,760 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:07:31,375 utils (0.004) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id", "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "services_subscription" INNER JOIN "clients_client" ON ("services_subscription"."client_id" = "clients_client"."id") INNER JOIN "auth_user" ON ("clients_client"."user_id" = "auth_user"."id"); args=(); alias=default
+DEBUG 2024-09-28 11:08:50,184 utils (0.008) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:08:50,188 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:08:58,887 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:08:58,893 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:09:00,325 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:09:00,330 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:09:01,762 utils (0.002) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 11:09:01,766 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:09:01,771 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:09:01,774 utils (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 11:09:10,187 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:09:10,191 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:09:11,637 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:09:11,641 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:09:15,072 utils (0.003) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 11:09:15,078 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:09:15,082 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:09:18,396 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:09:18,400 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:09:22,383 utils (0.001) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 11:09:22,387 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:09:22,390 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" IN (1, 3); args=(1, 3); alias=default
+DEBUG 2024-09-28 11:09:42,060 utils (0.006) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:09:42,064 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:09:43,274 utils (0.001) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 11:09:43,277 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:09:43,280 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:09:43,283 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 11:09:43,286 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 11:09:43,290 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:09:43,293 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:09:45,645 utils (0.005) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:09:45,649 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:09:50,765 utils (0.002) SELECT "services_subscription"."id", "services_subscription"."client_id", "services_subscription"."service_id", "services_subscription"."plan_id" FROM "services_subscription"; args=(); alias=default
+DEBUG 2024-09-28 11:09:50,770 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:09:50,774 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:09:50,777 utils (0.001) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 11:09:50,780 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2024-09-28 11:09:50,782 utils (0.000) SELECT "clients_client"."id", "clients_client"."user_id", "clients_client"."company_name", "clients_client"."full_address" FROM "clients_client" WHERE "clients_client"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:09:50,785 utils (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2024-09-28 11:12:34,404 utils (0.006) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:12:34,410 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:13:04,976 utils (0.006) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:13:04,980 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:13:08,521 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:13:08,525 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:13:09,951 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:13:09,954 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:13:13,483 utils (0.004) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:13:13,486 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2024-09-28 11:18:54,044 utils (0.006) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2024-09-28 11:18:54,050 utils (0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
